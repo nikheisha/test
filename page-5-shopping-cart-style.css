@@ -1,0 +1,262 @@
+/* Establishes grid layout for the page */
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: max-content;
+    grid-template-areas:
+    "nav nav"
+    "products subtotal";
+    color: #16302B;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.products{
+    padding-left: 2rem;
+    grid-area: products;
+}
+
+.subtotal{
+    display: inline-block;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 1.4rem;
+    grid-area: subtotal;
+}
+
+
+
+/* 'Your Cart' item list formatting */
+h1{
+    float: left;
+    font-size: 2.2rem;
+    color: #afccb8;
+    margin-bottom: 10px;
+}
+
+h2{
+    float: right;
+    padding-top: 0.7rem;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    color: #16302B;
+    text-decoration: underline;
+}
+
+.cart-items{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+}
+
+.item{
+    border: 3px solid #16302B;
+    border-radius: 8px;
+}
+
+.image-container{
+    display: inline;
+    width: 50%;
+}
+
+.image{
+    width: 50%;
+    border-radius: 8px 0 0 8px;
+}
+
+.description{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #16302B;
+    width: 47%;
+    vertical-align: top;
+    padding-left: 3px;
+    padding-top: 3px;
+    border-left: 3px solid #16302B; 
+}
+
+/* Makes product link to its page */
+a.fill-div {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #16302B;
+}
+
+h3{
+    text-align: right;
+    margin: 0;
+    font-size: 1rem;
+    color: #afccb8;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+h4{
+    text-align: right;
+    margin: 0;
+    font-style: normal;
+    color: #16302B;
+    font-size: 1.5rem
+}
+
+.quantity{
+    padding-top: 10%;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.cart-remove{
+    width: 2rem;
+    padding-bottom: 5px;
+    padding-right: 2px;
+}
+
+.cart-add{
+    width: 2rem;
+    padding-top: 3px;
+    padding-left: 2px;
+}
+
+.cart-delete{
+    width: 1.3rem;
+    padding-top: 6px;
+    float: right;
+}
+
+
+
+/* 'Subtotal' section formatting */
+h5{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+h6{
+    display: inline-flex;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: 0.7rem;
+    overflow: hidden;
+}
+
+h7{
+    display: inline-flex;
+    float: right;
+    font-size: 1.5rem;
+    margin-top: 0.54rem;
+    color: #afccb8;
+    overflow: hidden;
+}
+
+.line{
+    display: block;
+    margin-top: 1.5rem;
+    border-top: 2px solid #16302B;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+h8{
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    padding-top: 0.6rem;
+    padding-left: 10%;
+}
+
+
+
+/* Checkout button formatting */
+.button{
+    display: inline;
+    float: right;
+}
+
+button{
+    margin-top: 10rem;
+    margin-left: 19rem;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    padding: 10px  20px 10px 20px;
+    background-color: #fff;
+    border: 3px solid #16302B;
+    border-radius: 8px;
+}
+
+button h5{
+    margin: 0;
+}
+
+button:hover{
+    background-color: #AFCCB8;
+    cursor: pointer;
+}
+
+
+
+/* Formatting for smaller screen sizes */
+@media screen and (max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+        "nav"
+        "products"
+        "subtotal";
+    }
+    h1{
+        color: #16302B;
+    }
+    .products{
+        padding-right: 30px;
+        grid-area: products;
+    }
+    .subtotal{
+        padding-left: 2rem;
+    }
+    .item{
+        border: 3px solid #afccb8;
+    }
+    .image{
+        border-right: none;
+    }
+    .description{
+        border-left: 3px solid #afccb8;
+        font-size: 1.2rem;
+        color: #2C6758;
+    }
+    .subtotal{
+        padding-top: 0;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    b{
+        color: #16302B;
+    }
+    h5{
+        margin: 0;
+    }
+    h6{
+        font-size: 1.25rem;
+    }
+    h7{
+        font-size: 1.25rem;
+        margin-top: 0.7rem;
+    }
+    button{
+        margin-top: 7rem;
+        font-size: 1.2rem;
+        margin-left: 8rem;
+    }
+}

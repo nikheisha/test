@@ -1,0 +1,351 @@
+/* Establishes grid layout for the page */
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: max-content;
+    grid-template-areas:
+    "nav nav"
+    "summary details";
+    color: #16302B;
+    font-family: Poppins;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.summary{
+    grid-area: summary;
+    padding-left: 2rem;
+}
+
+.details{
+    grid-area: details;
+    padding-right: 2rem;
+    margin-top: 6rem;
+}
+
+
+
+/* Product summary formatting */
+.cart-items{
+    display: inline-block;
+}
+
+.item{
+    border: 3px solid #16302B;
+    width: 85%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.image-container{
+    display: inline-block;
+    width: 20%;
+}
+
+.image{
+    width: 100%;
+    padding-right: 5px;
+    border-radius: 8px 0 0 8px;
+}
+
+.description{
+    display: inline-block;
+    width: 78%;
+    font-style: italic;
+    text-align: left;
+    text-align-last: left;
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+p{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+h1{
+    float: left;
+    font-size: 1rem;
+    color: #afccb8;
+    margin: 0;
+    margin-top: 4%;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: right;
+    float: right;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 4%;
+    font-style: normal;
+}
+
+h3{
+    /* checkout summary title formatting */
+    font-size: 2.2rem;
+    color: #afccb8;
+    margin-bottom: 1rem;
+}
+
+.subtotal-container{
+    width: 85%;
+}
+
+.subtotal{
+    display: inline;
+    float: left;
+    font-size: 1.3rem;
+}
+
+.amount{
+    display: inline;
+    float: right;
+    font-size: 1.6rem;
+    color: #16302B;
+}
+
+h4{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: #2C6758;
+}
+
+/* Makes product link to its page */
+a.fill-div {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #16302B;
+}
+
+
+
+/* Dropdown forms formatting */
+/* Formats the <div> container so content can be positioned */
+.dropdown-container {
+    position: relative;
+    display: block;
+    margin: 0.5rem;
+    float: right;
+    padding-left: 2rem;
+}
+
+/* Dropdown button style */
+.dropdown-button {
+    background-color: #16302B;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 35rem;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: italic;
+    border-radius: 4px 4px 4px 4px;
+    text-align: left;
+}
+  
+/* Changes background colour of dropdown button on hover and when clicked */
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: #051F20;
+}
+
+/* Changes border radius of dropdown button when clicked */
+.dropdown-button:focus{
+    border-radius: 4px 4px 0 0;
+}
+  
+/* Dropdown menu content (hidden when "show" class is not present) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #16302B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 35rem;
+    border-radius: 0 0 4px 4px;
+}
+  
+h5 {
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #fff;
+    margin: 15px;
+    margin-top: 0;
+}
+  
+form{
+    color: #fff;
+    margin-left: 15px;
+}
+
+/* Form input value style */
+form input{
+    width: 60%;
+    background-color: #16302B;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Poppins;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Changes colour of placeholder text on different browser types */
+::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+}
+
+.empty-circle{
+    vertical-align: middle;
+    width: 2rem;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+  
+.arrow-down{
+    float: right;
+    padding-top: 13px;
+    padding-right: 20px;
+    width: 1.7rem;
+}
+
+.arrow-up{
+    float: right;
+    padding-top: 11px;
+    padding-right: 20px;
+    width: 1.7rem;
+}
+
+/* "show" class is added to the dropdown button on click to display menu */
+.show {
+    display: block;
+    position: relative;
+}
+
+.checkbox {
+    display: block;
+    padding: 1em;
+    float: right;
+    width: 85%;
+}
+  
+input {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+
+
+/* Confirm button formatting */
+.confirm{
+    float: right;
+    padding-right: 0.5rem;
+}
+
+.confirm button{
+    margin-top: 5rem;
+    margin-left: 19rem;
+    font-size: 3rem;
+    font-family: Poppins;
+    padding: 10px  20px 10px 20px;
+    background-color: #fff;
+    border: 3px solid #16302B;
+    border-radius: 8px;
+}
+
+button h6{
+    margin: 0;
+}
+
+.confirm button:hover{
+    background-color: #AFCCB8;
+    cursor: pointer;
+}
+
+a{
+    color: #16302B;
+}
+
+
+
+/* Formatting for medium sized screens */
+@media screen and (max-width: 1070px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+        "nav"
+        "summary"
+        "details";
+    }
+} 
+
+
+
+/* Formatting for smaller screen sizes */
+@media screen and (max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+        "nav"
+        "summary"
+        "details";
+    }
+    .item{
+        border: 3px solid #afccb8;
+        width: 90%;
+    }
+    p{
+        font-size: 1rem;
+        color: #2C6758;
+    }
+    h1{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 2rem;
+        color: #16302B;
+    }
+    .subtotal-container{
+        width: 90%;
+    }
+    .subtotal{
+        font-size: 1.2rem;
+    }
+    .amount{
+        font-size: 1.3rem;
+    }
+    .details{
+        margin-top: 2rem;
+    }
+    .checkbox{
+        float: left;
+        margin-left: 2rem;
+    }
+    form input{
+        width: 60%;
+    }
+}

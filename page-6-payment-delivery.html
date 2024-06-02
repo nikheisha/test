@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet"  href="page-6-payment-delivery-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <script src="page-6-payment-delivery-script.js"></script>
+    <title>Klapp AV - Payment and Delivery</title>
+</head>
+
+<body>
+
+    <!-- Container for page layout formatting -->
+    <div class="container">
+
+        <!-- Navigation bar -->
+        <nav>
+            <div class="navbar">
+                <a href="page-8-not-available.html"">  <img src="images/menu.svg" class="icon1">  <span>Menu</span>  </a>
+                <a href="page-2-search-results.html">  <img src="images/search.svg" class="icon2">  <span>Search</span>  </a>
+                <a href="page-1-home.html">  <img src="images/klapp.png" class="klapp">  </a>
+                <a href="page-5-shopping-cart.html">  <img src="images/cart-select.svg" class="icon1">  <span class="active">Your Cart</span>  </a>
+                <a href="page-8-not-available.html">  <img src="images/user.svg" class="icon1">  <span>Log in</span>  </a>
+            </div>
+        </nav>
+
+        <!-- Product summary section -->
+        <div class="summary">
+            <h3>CHECKOUT SUMMARY</h3>
+            <div class="cart-items">
+                <div class="item">
+                    <a href="page-3-product-1.html" class="fill-div">
+                        <div class="image-container">
+                            <img src="images/product1-large.png" class="image">
+                        </div>
+                        <div class="description">
+                            <p>JUKE BOX E1 BLACK TURNTABLE WITH ORTOFON OM 5E CARTRIDGE</p>
+                            <h1>QUANTITY: 1,  COLOUR: BLACK</h1>
+                            <h2>AU$989</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="page-4-product-2.html" class="fill-div">
+                        <div class="image-container">
+                            <img src="images/product2-large.png" class="image">
+                        </div>
+                        <div class="description">
+                            <p>STEREO BOX DS3 INTEGRATED AMPLIFIER SILVER</p>
+                            <h1>QUANTITY: 1,  COLOUR: SILVER</h1>
+                            <h2>AU$1,119</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="subtotal-container">
+                    <span class="subtotal">SUBTOTAL</span>  <span class="amount">AU$2,108</span>
+                </div>
+                <br>
+                <br>
+                <a href="page-5-shopping-cart.html">
+                    <h4>< BACK TO CART</h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section with forms to be filled so the customer may confirm their purchase -->
+        <div class="details">
+            <!-- Contact information dropdown box button-->
+            <div class="dropdown-container">
+                <button class="dropdown-button">
+                    <img src="images/filled-circle.svg" class="empty-circle">
+                    CONTACT INFORMATION
+                    <img src="images/arrow-down.svg" class="arrow-down">
+                </button>
+            </div>
+            <!-- Shipping details dropdown box button-->
+            <div class="dropdown-container">
+                <button class="dropdown-button">
+                    <img src="images/filled-circle.svg" class="empty-circle">
+                    SHIPPING DETAILS
+                    <img src="images/arrow-down.svg" class="arrow-down">
+                </button>
+            </div>
+            <!-- Payment information dropdown box button-->
+            <div class="dropdown-container">
+                <button onclick="dropDown()" class="dropdown-button">
+                    <img src="images/empty-circle.svg" class="empty-circle">
+                    PAYMENT INFORMATION
+                    <img src="images/arrow-down.svg" class="arrow-down">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <h5>CREDIT/DEBIT CARD DETAILS</h5>
+                    <form>
+                        <input type="text" placeholder="NAME OF CARD HOLDER">  <br>
+                        <input type="number" placeholder="CARD NUMBER">  <br>
+                        <input type="number" placeholder="MM/YY">  <br>
+                        <input type="number" placeholder="CVC">
+                    </form>
+                </div>
+            </div>
+            <!-- Terms and conditions checkbox button -->
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="checkbox"> I HAVE READ AND AGREED TO THE <a href="#"> <i>TERMS AND CONDITIONS</i> </a> OF KLAPP AV.</label>
+            </div>
+            <!-- Confirm button -->
+            <div class="confirm">
+                <a href="page-7-confirmation.html">
+                    <button type="button">  <h6> CONFIRM </h6>  </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

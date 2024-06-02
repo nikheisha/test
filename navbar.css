@@ -1,0 +1,77 @@
+/* Global formatting */
+body {
+    margin: 0;
+    line-height: normal;
+    font-family: Poppins;
+}
+
+/* General navigation bar style */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #16302B;
+}
+
+
+
+/* Anchor text formatting */
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    color: #16302B;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+/* Changes colour of navbar element when selected page is open */
+.active{
+    color: #AFCCB8;
+}
+
+
+
+/* Navbar icon formatting */
+.klapp{
+    display: flex;
+    width: 150px;
+}
+
+.icon1{
+    display: flex;
+    width: 30px;
+    padding-right: 5px;
+}
+
+.icon2{
+    display: flex;
+    width: 35px;
+    padding-right: 5px;
+}
+
+
+
+/* Makes navbar responsive to smaller screen sizes */
+@media screen and (max-width: 745px) {
+    /* adjusts navbar and contents to smaller screen size */
+    .navbar a {
+        float: none;
+        display: flex;
+    }
+    .navbar span{
+        display: none;
+    }
+    .icon1{
+        width: 35px;
+    }
+    .icon2{
+        width: 40px;
+    }
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="page-1-home-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <script src="page-1-home-script.js"></script>
+    <title>Klapp - Home</title>
+</head>
+
+<body>
+
+    <!-- Container for page layout formatting -->
+    <div class="container">
+
+        <!-- Navigation bar -->
+        <nav>
+            <div class="navbar">
+                <a href="page-8-not-available.html"">  <img src="images/menu.svg" class="icon1"> <span>Menu</span>  </a>
+                <a href="page-2-search-results.html">  <img src="images/search.svg" class="icon2">  <span>Search</span>  </a>
+                <a href="page-1-home.html">  <img src="images/klapp.png" class="klapp">  </a>
+                <a href="page-5-shopping-cart.html">  <img src="images/cart.svg" class="icon1">  <span>Your Cart</span>  </a>
+                <a href="page-8-not-available.html">  <img src="images/user.svg" class="icon1">  <span>Log in</span>  </a>
+            </div>
+        </nav>
+
+        <!-- Promotional Banner -->
+        <main>
+            <!-- Slideshow banner code sourced from Medium -->
+            <!-- https://medium.com/illumination/how-to-build-a-slideshow-using-html-css-and-javascript-977ecbdbf48c -->
+            <div class="banner-container slide">
+                <img src="images/banner.png" class="banner">
+            </div>
+            <div class="banner-container slide">
+                <img src="images/banner2.png" class="banner">
+            </div>
+            <div class="banner-container slide">
+                <img src="images/banner3.png" class="banner">
+            </div>
+            <a class="prev" onclick="prevSlide()">  <img src="images/left-arrow.svg" class="arrow">  </a>
+            <a class="next" onclick="nextSlide()">  <img src="images/right-arrow.svg" class="arrow">  </a>
+        </main>
+
+        <!-- Featured Collections -->
+        <div class="featured-collections">
+            SHOP BY
+            <h1>FEATURED COLLECTIONS</h1>
+            <div class="product">
+                <img src="images/featured1.png" class="image">
+                <h2>WIRELESS HEADPHONES</h2>
+            </div>
+            <div class="product">
+                <img src="images/featured2.png" class="image">
+                <h2>PRO-JECT X2 TURNTABLES</h2>
+            </div>
+            <div class="product">
+                <img src="images/featured3.png" class="image">
+                <h2>SHOP ALL SOUNDBARS</h2>
+            </div>
+            <img src="images/right-arrow-green.svg" class="arrow-green">
+        </div>
+
+        <!-- New Arrivals -->
+        <div class="new-arrivals">
+            <br>
+            <h1>NEW ARRIVALS</h1>
+            <!-- This product links to its product page -->
+            <a href="page-3-product-1.html" class="fill-div">
+                <div class="product">
+                    <img src="images/arrival1.png" class="image">
+                    <h3>PRO-JECT JUKE BOX E1 BLACK TURNTABLE WITH OROTON OM 5E CARTRIDGE</h3>
+                    <h4>AU $1,099 </h4>
+                    <h5> AU$989</h5>
+                </div>
+            </a>
+            <div class="product">
+                <img src="images/arrival2.png" class="image">
+                <h3>PRO-JECT JUKE BOX E1 WHITE TURNTABLE SET WITH SPEAKER BOX 5 & CABLE</h3>
+                <h4>AU $1,648 </h4>
+                <h5> AU$1,479</h5>
+            </div>
+            <!-- This product links to its product page -->
+            <a href="page-4-product-2.html" class="fill-div">
+                <div class="product">
+                    <img src="images/arrival3.png" class="image">
+                    <h3>PRO-JECT STEREO BOX D3 INTEGRATED AMPLIFIED SILVER</h3>
+                    <h4>AU $1,599 </h4>
+                    <h5> AU$1,199</h5>
+                </div>
+            </a>
+            <img src="images/right-arrow-green.svg" class="arrow-green">
+        </div>
+
+        <!-- About Us -->
+        <div class="about">
+            <div class="line"></div>
+            <h6>ABOUT US</h6>
+            <p>Klapp AV is Melbourne's iconic Audio Visual leader serving the audiophile connoisseurs and enthusiasts
+                for over 60 years. With loyal customers all around Melbourne, nationally and across the globe, we offer
+                the biggest brands and one of the best collections of top audio/visual models in the World.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

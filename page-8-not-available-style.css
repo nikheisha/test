@@ -1,0 +1,12 @@
+/* Global formatting */
+body{
+    color: #fff;
+    background-color: #051F20;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+/* Return to home link formatting */
+a{
+    color: #fff;
+}

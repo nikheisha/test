@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet"  href="page-5-shopping-cart-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <title>Klapp AV - Shopping Cart</title>
+</head>
+
+<body>
+
+    <!-- Container for page layout formatting -->
+    <div class="container">
+
+        <!-- Navigation bar -->
+        <nav>
+            <div class="navbar">
+                <a href="page-8-not-available.html""><img src="images/menu.svg" class="icon1"><span>Menu</span></a>
+                <a href="page-2-search-results.html"><img src="images/search.svg" class="icon2"><span>Search</span></a>
+                <a href="page-1-home.html"><img src="images/klapp.png" class="klapp"></a>
+                <a href="page-5-shopping-cart.html"><img src="images/cart-select.svg" class="icon1"><span class="active">Your Cart</span></a>
+                <a href="page-8-not-available.html"><img src="images/user.svg" class="icon1"><span>Log in</span></a>
+            </div>
+        </nav>
+
+        <!-- Shopping cart item list -->
+        <div class="products">
+            <div>
+                <h1>YOUR CART</h1>
+                <h2>2 ITEMS</h2>
+                <!-- First product in cart -->
+                <div class="cart-items">
+                    <div class="item">
+                        <div class="image-container">
+                            <a href="page-3-product-1.html" class="fill-div">
+                                <img src="images/product1-large.png" class="image">
+                            </a>
+                        </div>
+                        <div class="description">
+                            <a href="page-3-product-1.html"  class="fill-div">
+                                JUKE BOX E1 BLACK TURNTABLE WITH ORTOFON OM 5E ...
+                            </a>
+                            <h3>AU$ 1,099</h3>
+                            <h4>AU$989</h4>
+                            <div class="quantity">
+                                <img src="images/cart-remove.svg" class="cart-remove">
+                                <b> 1 </b>
+                                <img src="images/cart-add.svg" class="cart-add">
+                                <img src="images/cart-delete.svg" class="cart-delete">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second product in cart -->
+                <div class="cart-items">
+                    <div class="item">
+                        <a href="page-4-product-2.html" class="fill-div">
+                            <div class="image-container">
+                                <img src="images/product2-large.png" class="image">
+                            </div>
+                        </a>
+                        <div class="description">
+                            <a href="page-4-product-2.html" class="fill-div">
+                                STEREO BOX DS3 INTEGRATED AMPLIFIER SILVER
+                            </a>
+                            <h3>AU$ 1,599</h3>
+                            <h4>AU$1,119</h4>
+                            <div class="quantity">
+                                <img src="images/cart-remove.svg" class="cart-remove">
+                                <b> 1 </b>
+                                <img src="images/cart-add.svg" class="cart-add">
+                                <img src="images/cart-delete.svg" class="cart-delete">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtotal calculation -->
+        <div class="subtotal">
+            <h5>SUBTOTAL</h5>
+            <h6>JUKE BOX E1 BLACK TURNTABLE ...</h6>  <h7>AU$989</h7>
+            <h6>STEREO BOX DS3 INTEGRATED ...</h6>  <h7>AU$1,119</h7>
+            <h6>SHIPPING COSTS</h6>  <h7>calculated at checkout</h7>
+            <div class="line">  <h8>AU$2,108</h8>  </div>
+            <!-- Checkout button -->
+            <div class="button">
+                <a href="page-6-payment-delivery.html">
+                    <button type="button">  <h5> CHECKOUT </h5>  </button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
